@@ -23,5 +23,26 @@
 */
 public class Store
 {
+  private ArrayList items = new ArrayList<ItemForSale>();
+  private Double profit = 0;
+
+  public showItems() {
+    return items;
+  }
+  public void addItem(ItemForSale item) {
+    items.add(item);
+  }
+  public void sellItem(ItemForSale item) {
+    if(items.contains(item)) {
+      newCash = item.getPrice();
+      profit += newCash;
+      items.remove(item);
+    }
+  }
+  public getCreator(ItemForSale item) {
+    return (Author)item.getName();
+  }
+
+
 
 }

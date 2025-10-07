@@ -13,5 +13,7 @@ public class Movie extends ItemForSale
     public getDuration() {
         return duration;
     }
-
+    public getAuthor(){
+        return author;
+    }
 }

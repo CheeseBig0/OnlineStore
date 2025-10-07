@@ -29,6 +29,9 @@ public class Store
   public showItems() {
     return items;
   }
+  public showProfit(){
+    return profit;
+  }
   public void addItem(ItemForSale item) {
     items.add(item);
   }
@@ -40,9 +43,7 @@ public class Store
     }
   }
   public getCreator(ItemForSale item) {
-    return (Author)item.getName();
+    return item.getAuthor();
   }
-
-
-
+  
 }

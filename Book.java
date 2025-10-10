@@ -11,11 +11,11 @@ public class Book extends ItemForSale
         creator = author;
     }
 
-    public getPublisher(){
+    public String getPublisher(){
         return publisher;
     }
-    public getAuthor(){
+    public Author getAuthor(){
         return creator;
     }
-
+    
 }

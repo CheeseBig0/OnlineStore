@@ -8,10 +8,10 @@ public class Author
         birthday = dob;
     }
 
-    public getName() {
+    public String getName() {
         return name;
     }
-    public getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 

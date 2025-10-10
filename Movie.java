@@ -10,10 +10,10 @@ public class Movie extends ItemForSale
         author = creator;
     }
 
-    public getDuration() {
+    public Double getDuration() {
         return duration;
     }
-    public getAuthor(){
+    public Author getAuthor(){
         return author;
     }
 }

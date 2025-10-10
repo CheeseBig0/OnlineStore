@@ -10,13 +10,13 @@ public class ItemForSale
         date = day;
     }
 
-    public getPrice() {
+    public Double getPrice() {
         return price;
     }
-    public getName() {
+    public String getName() {
         return name;
     }
-    public getDate() {
+    public String getDate() {
         return date;
     }
 }

@@ -21,15 +21,16 @@
 
     Where these variables are stored and how to name them is up to you!
 */
+import java.util.ArrayList;
 public class Store
 {
-  private ArrayList items = new ArrayList<ItemForSale>();
-  private Double profit = 0;
+  private ArrayList<ItemForSale> items = new ArrayList<ItemForSale>();
+  private Double profit = 0.0;
 
-  public showItems() {
+  public ArrayList<ItemForSale> showItems() {
     return items;
   }
-  public showProfit(){
+  public Double showProfit(){
     return profit;
   }
   public void addItem(ItemForSale item) {
@@ -37,13 +38,13 @@ public class Store
   }
   public void sellItem(ItemForSale item) {
     if(items.contains(item)) {
-      newCash = item.getPrice();
+      double newCash = item.getPrice();
       profit += newCash;
       items.remove(item);
     }
   }
-  public getCreator(ItemForSale item) {
-    return item.getAuthor();
+  public String getCreator(ItemForSale item) {
+    return item.getName();
   }
   
 }
